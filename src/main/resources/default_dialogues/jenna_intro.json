@@ -1,0 +1,43 @@
+{
+  "start": "ask",
+  "camera": {
+    "distance": 1.3,
+    "height": -0.08,
+    "side_shift": 0.55,
+    "aim_y": -0.2,
+    "angle": 12,
+    "fov": 0.72,
+    "speed": 7.0,
+    "anchor": "player",
+    "face_npc": true
+  },
+  "nodes": {
+    "ask": {
+      "speaker": "Дженна",
+      "text": "На какое направление будешь поступать?",
+      "choices": [
+        { "text": "Экология и природопользование.", "icon": "lastreality:textures/gui/icons/ecology.png", "next": "answer" },
+        { "text": "Математическая экономика и теория управления.", "icon": "lastreality:textures/gui/icons/math.png", "next": "answer" },
+        { "text": "Живопись и изящные искусства.", "icon": "lastreality:textures/gui/icons/art.png", "next": "answer" },
+        { "text": "Социология и социальная информатика.", "icon": "lastreality:textures/gui/icons/sociology.png", "next": "answer" },
+        { "text": "Художественный перевод с древних языков.", "icon": "lastreality:textures/gui/icons/translation.png", "next": "answer" },
+        { "text": "Молекулярная биология и биотехнология.", "icon": "lastreality:textures/gui/icons/biology.png", "next": "answer" }
+      ]
+    },
+    "answer": {
+      "speaker": "Дженна",
+      "text": "Отличный выбор! Тогда пойдём, я покажу тебе корпус. Только не отставай, здесь легко заблудиться.",
+      "camera": {
+        "distance": 1.0,
+        "height": -0.05,
+        "side_shift": 0.45,
+        "aim_y": -0.15,
+        "angle": -18,
+        "fov": 0.65,
+        "speed": 5.0,
+        "anchor": "player",
+        "face_npc": true
+      }
+    }
+  }
+}
